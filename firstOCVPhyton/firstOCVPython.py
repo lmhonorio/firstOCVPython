@@ -3,12 +3,17 @@ import cv2
 import matplotlib.pyplot as plt
 import ImageTest
 import HaarCascade
-
+import CameraCalibration
 
 file = '.\haarfiles\haarcascade_frontalface_alt.xml'
 
 
+#CameraCalibration.clsCameraCalibration.GenerateImageDataset('apic',20,2,5)
+#CameraCalibration.clsCameraCalibration.CalibrateUsingImages()
+
 #obj = ImageTest.clsImage('.\images\a8.jpg')
+
+
 
 ImageTest.clsImage.matchingTests()
 

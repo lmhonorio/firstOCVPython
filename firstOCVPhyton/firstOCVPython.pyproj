@@ -24,6 +24,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CameraCalibration.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="firstOCVPython.py" />
     <Compile Include="HaarCascade.py">
       <SubType>Code</SubType>
@@ -31,6 +34,7 @@
     <Compile Include="ImageTest.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="matrix_k.py" />
     <Compile Include="MultipleObjectEstimation.py">
       <SubType>Code</SubType>
     </Compile>

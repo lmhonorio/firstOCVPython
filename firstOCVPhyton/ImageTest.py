@@ -196,11 +196,11 @@ COMMONLY USED COMMANDS
 	#=======================================
 	@staticmethod
 	def matchingTests(): 
-		im_1 = cv2.imread('a8.jpg')
-		im_2 = cv2.imread('a9.jpg')
+		im_1 = cv2.imread('b4.jpg')
+		im_2 = cv2.imread('b5.jpg')
 
-		im_1 = cv2.resize(im_1,None,fx=0.3, fy=0.3, interpolation = cv2.INTER_CUBIC)
-		im_2 = cv2.resize(im_2,None,fx=0.3, fy=0.3, interpolation = cv2.INTER_CUBIC)
+		#im_1 = cv2.resize(im_1,None,fx=0.3, fy=0.3, interpolation = cv2.INTER_CUBIC)
+		#im_2 = cv2.resize(im_2,None,fx=0.3, fy=0.3, interpolation = cv2.INTER_CUBIC)
 
 		im_1 = cv2.cvtColor(im_1, cv2.COLOR_BGR2GRAY)
 		im_2 = cv2.cvtColor(im_2, cv2.COLOR_BGR2GRAY)
@@ -227,7 +227,7 @@ COMMONLY USED COMMANDS
 							flags = 0)
 
 		
-		img3 = cv2.drawMatches(im_1,kp_1,im_2,kp_2,matches[0:50], None, **draw_params)
+		img3 = cv2.drawMatches(im_1,kp_1,im_2,kp_2,matches[0:60], None, **draw_params)
 		ipt1 = matches[0].queryIdx
 		pt1 = kp_1[ipt1]
 		ip1 = (int(pt1.pt[0]), int(pt1.pt[1]))

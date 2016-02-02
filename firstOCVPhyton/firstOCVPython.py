@@ -4,19 +4,22 @@ import matplotlib.pyplot as plt
 import ImageTest
 import HaarCascade
 import CameraCalibration
+import Reconstruction
 
 file = '.\haarfiles\haarcascade_frontalface_alt.xml'
 
 
-#CameraCalibration.clsCameraCalibration.GenerateImageDataset('apic',20,2,5)
+#CameraCalibration.clsCameraCalibration.GenerateImageDataset('a_pic',20,5,5)
 #CameraCalibration.clsCameraCalibration.CalibrateUsingImages()
 
 #obj = ImageTest.clsImage('.\images\a8.jpg')
 
 
 
-ImageTest.clsImage.matchingTests()
+#ImageTest.clsImage.matchingTests()
 
+
+Reconstruction.clsReconstruction.matchingTests();
 
 #obj.MotionEstimation()
 #obj.CaptureWebCam()
